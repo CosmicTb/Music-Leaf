@@ -1,4 +1,4 @@
-# Music-Leaf `v0.0.1-prerelease`
+# Music-Leaf `v0.0.2-prerelease`
 A music player on the web that can play your music files (Not out yet)
 
 ## Plans for Music Leaf:
