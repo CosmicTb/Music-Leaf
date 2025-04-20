@@ -1,0 +1,68 @@
+/* Variables */
+:root {
+    /* Colors */
+    --colorBg: #1A1A1A;
+    --colorText: white;
+
+    /* Numbers */
+    --contentBottomHeight: 150px;
+}
+
+
+/* General */
+* {
+    color: var(--colorText);
+    font-family: sans-serif, arial;
+}
+
+body {
+    background-color: var(--colorBg);
+    display: flex;
+    flex-flow: column;
+    margin: 0;
+    height: 100vh;
+}
+
+
+/* Content divs */
+.contentTop {
+    background-color: orange;
+    height: calc(100% - var(--contentBottomHeight));
+}
+
+.contentBottom {
+    background-color: green;
+    height: var(--contentBottomHeight);
+}
+
+.contentActions {
+    align-items: center;
+    background-color: #00ffff80;
+    bottom: calc(var(--contentBottomHeight) * 0.75);
+    display: flex;
+    flex-flow: row;
+    height: calc(var(--contentBottomHeight) * 0.5);
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+
+.contentActions > button {
+    aspect-ratio: 1/1;
+    background-color: red;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    height: 70%;
+}
+
+.contentActions > button > img {
+    aspect-ratio: 1/1;
+    background-color: yellowgreen;
+    height: 50%;
+}
+
+.contentActions > .mainButton {
+    background-color: slateblue;
+    height: 100%;
+}
