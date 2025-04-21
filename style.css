@@ -21,6 +21,7 @@ body {
     flex-flow: column;
     margin: 0;
     height: 100vh;
+    height: 100dvh;
 }
 
 button {
@@ -36,11 +37,29 @@ button {
     height: var(--contentBottomHeight);
 }
 
+.contentBottom > button {
+    align-items: center;
+    background: violet;
+    border: none;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    padding: 0;
+    width: 10%;
+}
+
+.contentBottom > button > img {
+    background: slateblue;
+    height: 80%;
+    object-fit: contain;
+    width: 80%;
+}
+
 .contentBottom > .main {
     background: yellow;
     display: flex;
     flex-flow: column;
-    width: 100%;
+    width: 90%;
 }
 
 .contentBottom > .main > div {
@@ -54,9 +73,39 @@ button {
     flex-flow: row;
 }
 
-.contentBottom > .main > div:first-child > div {
+.contentBottom > .main > div:first-child > div:not(.contentActions) {
+    align-items: center;
     background: linear-gradient(90deg, cadetblue, #94fbff);
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
     width: 20%;
+}
+
+.contentBottom > .main > div:first-child > div:not(.contentActions) > button {
+    background: linear-gradient(90deg, brown, yellow);
+    border: none;
+    height: 100%;
+    padding: 0;
+    width: 50%;
+}
+
+.contentBottom > .main > div:first-child > div:not(.contentActions) > button > img {
+    background: black;
+    height: 70%;
+    object-fit: contain;
+    width: 70%;
+}
+
+.contentBottom > .main > div:first-child > div:not(.contentActions) > p {
+    background: orangered;
+    height: fit-content;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0 10px 0 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 50%;
 }
 
 .contentBottom > .main > div:first-child > .contentActions {
@@ -88,20 +137,6 @@ button {
 .contentBottom > .main > div:first-child > .contentActions > .main {
     background: blue;
     height: 100%;
-}
-
-.contentBottom > button {
-    aspect-ratio: 1/1;
-    background: violet;
-    border: none;
-    height: 100%;
-    padding: 0;
-}
-
-.contentBottom > button > img {
-    aspect-ratio: inherit;
-    background: slateblue;
-    height: 75%;
 }
 
 .contentTop {
