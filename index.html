@@ -1,19 +1,45 @@
+<!-- I'm so sorry in advance for anyone who's trying to read this, including the CSS code ;-; -->
 <!DOCTYPE html>
 <html>
     <head>
         <title>Music Leaf</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="favicon.ico">
     </head>
     <body>
-        <div class="contentTop"></div>
-        <div class="contentBottom">
-            <button title="Queue"><img src="placeholder.png"></button>
-            <div class="main">
+        <!-- License -->
+        <a class="license" href="https://github.com/CosmicTb/Music-Leaf" target="_blank">Music Leaf © 2025 by CosmicTb</a>
+
+        <!-- Help content -->
+        <button class="helpBtn" title="Help"><img src="placeholder.png"></button>
+
+        <!-- Main content -->
+        <div class="contentTop">
+            <div class="titleDiv">
                 <div>
+                    <img src="logos/default.png">
+                    <h1>Music Leaf <span>v0.0.4-prerelease</span></h1>
+                </div>
+                <p>Click "+" to add a song from your files, or click "?" for help.</p>
+            </div>
+        </div>
+
+        <!-- Content in the parts that the user could access more -->
+        <div class="contentBottom">
+            <!-- Queue button -->
+            <button title="Queue"><img src="placeholder.png"></button>
+
+            <!-- Main content that controls most of everything -->
+            <div class="main">
+                <!-- Top section -->
+                <div>
+                    <!-- Left side -->
                     <div>
                         <button title="Show video"><img src="placeholder.png"></button>
                         <p title=".mp4">.mp4</p>
                     </div>
+
+                    <!-- Middle content -->
                     <div class="contentActions">
                         <button title="Previous song"><img src="placeholder.png"></button>
                         <button title="Back 10s"><img src="placeholder.png"></button>
@@ -21,13 +47,34 @@
                         <button title="Forward 10s"><img src="placeholder.png"></button>
                         <button title="Next song"><img src="placeholder.png"></button>
                     </div>
+
+                    <!-- Right content -->
                     <div>
                         <button title="Fullscreen"><img src="placeholder.png"></button>
                         <button title="Picture In Picture"><img src="placeholder.png"></button>
                     </div>
                 </div>
-                <div></div>
+
+                <!-- Bottom section -->
+                <div>
+                    <!-- Top content -->
+                    <div>
+                        <!-- Playback timeline + the little silly circle (with it's own container) :3 -->
+                        <div><div><div></div></div></div>
+                    </div>
+
+                    <!-- Bottom content -->
+                    <div>
+                        <!-- Length of time -->
+                        <p>0:00/23:59:59</p>
+
+                        <!-- Name of song -->
+                        <div><p>Insert very cool song that has a long name :3</p></div>
+                    </div>
+                </div>
             </div>
+
+            <!-- Volume button -->
             <button title="Volume"><img src="placeholder.png"></button>
         </div>
     </body>
