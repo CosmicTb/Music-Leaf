@@ -279,7 +279,8 @@ button {
 /* Title div */
 .titleDiv {
     background: tomato;
-    width: 80%;
+    max-height: 75%;
+    max-width: 80%;
 }
 
 .titleDiv > div {
