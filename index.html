@@ -10,22 +10,31 @@
         <!-- License -->
         <a class="license" href="https://github.com/CosmicTb/Music-Leaf" target="_blank">Music Leaf © 2025 by CosmicTb</a>
 
+        <!-- Hidden stuff -->
+        <div id="hiddenContent"></div>
+
         <!-- Help content -->
         <button class="helpBtn" title="Help"><img src="placeholder.png"></button>
 
         <!-- Main content -->
         <div class="contentTop">
+            <!-- Title div -->
             <div class="titleDiv">
                 <div>
                     <img src="logos/default.png">
-                    <h1>Music Leaf <span>v0.0.4-prerelease</span></h1>
+                    <h1>Music Leaf <span>v0.0.5-prerelease</span></h1>
                 </div>
                 <p>Click "+" to add a song from your files, or click "?" for help.</p>
             </div>
+
+            <!-- Video -->
+            <video id="song" autoplay style="display: none;">
+                Your browser does not support HTML video.
+            </video>
         </div>
 
-        <!-- Content in the parts that the user could access more -->
-        <div class="contentBottom">
+        <!-- Control bar -->
+        <div class="controlBar">
             <!-- Queue button -->
             <button title="Queue"><img src="placeholder.png"></button>
 
@@ -41,6 +50,9 @@
 
                     <!-- Middle content -->
                     <div class="contentActions">
+                        <button class="main" title="Add song" onclick="addSong();"><img src="placeholder.png"></button>
+                    </div>
+                    <div class="contentActions" style="display: none;">
                         <button title="Previous song"><img src="placeholder.png"></button>
                         <button title="Back 10s"><img src="placeholder.png"></button>
                         <button class="main" title="Playing"><img src="placeholder.png"></button>
@@ -77,5 +89,6 @@
             <!-- Volume button -->
             <button title="Volume"><img src="placeholder.png"></button>
         </div>
+        <script src="controlbar.js"></script>
     </body>
 </html>

@@ -86,15 +86,15 @@ button {
     justify-content: center;
 }
 
-/* Bottom content div */
-.contentBottom {
+/* Control bar */
+.controlBar {
     background: green;
     display: flex;
     flex-flow: row;
     height: var(--contentBottomHeight);
 }
 
-.contentBottom > button {
+.controlBar > button {
     align-items: center;
     background: violet;
     border: none;
@@ -105,32 +105,32 @@ button {
     width: 10%;
 }
 
-.contentBottom > button > img {
+.controlBar > button > img {
     background: slateblue;
     height: 80%;
     object-fit: contain;
     width: 80%;
 }
 
-.contentBottom > .main {
+.controlBar > .main {
     background: yellow;
     display: flex;
     flex-flow: column;
     width: 90%;
 }
 
-.contentBottom > .main > div {
+.controlBar > .main > div {
     background: white;
     display: flex;
     height: 50%;
 }
 
-.contentBottom > .main > div:first-child {
+.controlBar > .main > div:first-child {
     background: red;
     flex-flow: row;
 }
 
-.contentBottom > .main > div:first-child > div:not(.contentActions) {
+.controlBar > .main > div:first-child > div:not(.contentActions) {
     align-items: center;
     background: linear-gradient(90deg, cadetblue, #94fbff);
     display: flex;
@@ -139,7 +139,7 @@ button {
     width: 20%;
 }
 
-.contentBottom > .main > div:first-child > div:not(.contentActions) > button {
+.controlBar > .main > div:first-child > div:not(.contentActions) > button {
     background: linear-gradient(90deg, brown, yellow);
     border: none;
     height: 100%;
@@ -147,14 +147,14 @@ button {
     width: 50%;
 }
 
-.contentBottom > .main > div:first-child > div:not(.contentActions) > button > img {
+.controlBar > .main > div:first-child > div:not(.contentActions) > button > img {
     background: black;
     height: 70%;
     object-fit: contain;
     width: 70%;
 }
 
-.contentBottom > .main > div:first-child > div:not(.contentActions) > p {
+.controlBar > .main > div:first-child > div:not(.contentActions) > p {
     background: orangered;
     height: fit-content;
     margin: 0;
@@ -165,7 +165,7 @@ button {
     width: 50%;
 }
 
-.contentBottom > .main > div:first-child > .contentActions {
+.controlBar > .main > div:first-child > .contentActions {
     align-items: center;
     background: linear-gradient(90deg, purple, #ff87ff);
     display: flex;
@@ -177,7 +177,7 @@ button {
     width: 80%;
 }
 
-.contentBottom > .main > div:first-child > .contentActions > button {
+.controlBar > .main > div:first-child > .contentActions > button {
     aspect-ratio: 1/1;
     background: red;
     border: none;
@@ -186,27 +186,27 @@ button {
     padding: 0;
 }
 
-.contentBottom > .main > div:first-child > .contentActions > button > img {
+.controlBar > .main > div:first-child > .contentActions > button > img {
     aspect-ratio: inherit;
     background: plum;
     height: 65%;
 }
 
-.contentBottom > .main > div:first-child > .contentActions > .main {
+.controlBar > .main > div:first-child > .contentActions > .main {
     background: blue;
     height: 100%;
 }
 
-.contentBottom > .main > div:last-child {
+.controlBar > .main > div:last-child {
     flex-flow: column;
 }
 
-.contentBottom > .main > div:last-child > div:first-child {
+.controlBar > .main > div:last-child > div:first-child {
     background: lightcoral;
     height: 50%;
 }
 
-.contentBottom > .main > div:last-child > div:first-child {
+.controlBar > .main > div:last-child > div:first-child {
     align-items: center;
     background: lightcoral;
     display: flex;
@@ -215,7 +215,7 @@ button {
     padding: 0 10%;
 }
 
-.contentBottom > .main > div:last-child > div:first-child > div {
+.controlBar > .main > div:last-child > div:first-child > div {
     background: aquamarine;
     border-radius: 100vh;
     cursor: pointer;
@@ -223,13 +223,13 @@ button {
     width: 100%;
 }
 
-.contentBottom > .main > div:last-child > div:first-child > div > div {
+.controlBar > .main > div:last-child > div:first-child > div > div {
     aspect-ratio: 1/1;
     background: yellow;
     height: 100%;
 }
 
-.contentBottom > .main > div:last-child > div:first-child > div > div > div {
+.controlBar > .main > div:last-child > div:first-child > div > div > div {
     background: royalblue;
     border-radius: 100%;
     height: 100%;
@@ -238,11 +238,11 @@ button {
     width: 100%;
 }
 
-.contentBottom > .main > div:last-child > div:first-child > div > div > div:hover {
+.controlBar > .main > div:last-child > div:first-child > div > div > div:hover {
     background: red;
 }
 
-.contentBottom > .main > div:last-child > div:last-child {
+.controlBar > .main > div:last-child > div:last-child {
     background: wheat;
     display: flex;
     flex-flow: row;
@@ -250,7 +250,7 @@ button {
     padding: 0 10%;
 }
 
-.contentBottom > .main > div:last-child > div:last-child > div {
+.controlBar > .main > div:last-child > div:last-child > div {
     background: maroon;
     height: fit-content;
     overflow: hidden;
@@ -260,12 +260,15 @@ button {
     width: 50%;
 }
 
-.contentBottom > .main > div:last-child > div:last-child > div > p {
+.controlBar > .main > div:last-child > div:last-child > div > p {
     background: slateblue;
+    overflow: hidden;
     margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
-.contentBottom > .main > div:last-child > div:last-child > p {
+.controlBar > .main > div:last-child > div:last-child > p {
     background: magenta;
     height: fit-content;
     margin: 0;
@@ -279,8 +282,8 @@ button {
 /* Title div */
 .titleDiv {
     background: tomato;
-    max-height: 60%;
-    width: 80%;
+    max-height: 75%;
+    max-width: 80%;
 }
 
 .titleDiv > div {
@@ -318,4 +321,13 @@ button {
     margin: 0;
     opacity: 0.5;
     text-align: center;
+}
+
+
+/* Video */
+video {
+    background-color: crimson;
+    height: 75%;
+    max-width: 90%;
+    object-fit: contain;
 }
