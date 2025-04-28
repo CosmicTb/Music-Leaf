@@ -262,7 +262,10 @@ button {
 
 .controlBar > .main > div:last-child > div:last-child > div > p {
     background: slateblue;
+    overflow: hidden;
     margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .controlBar > .main > div:last-child > div:last-child > p {
@@ -318,4 +321,13 @@ button {
     margin: 0;
     opacity: 0.5;
     text-align: center;
+}
+
+
+/* Video */
+video {
+    background-color: crimson;
+    height: 75%;
+    max-width: 90%;
+    object-fit: contain;
 }
