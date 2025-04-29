@@ -1,10 +1,11 @@
 <!-- I'm so sorry in advance for anyone who's trying to read this, including the CSS code ;-; -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Music Leaf</title>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="favicon.ico">
+        <script src="settings.js"></script>
     </head>
     <body>
         <!-- License -->
@@ -19,16 +20,16 @@
         <!-- Main content -->
         <div class="contentTop">
             <!-- Title div -->
-            <div class="titleDiv">
+            <div id="titleDiv" class="titleDiv" style="display: none;">
                 <div>
                     <img src="logos/default.png">
-                    <h1>Music Leaf <span>v0.0.5-prerelease</span></h1>
+                    <h1>Music Leaf <span>v0.0.6-prerelease</span></h1>
                 </div>
                 <p>Click "+" to add a song from your files, or click "?" for help.</p>
             </div>
 
             <!-- Video -->
-            <video id="song" autoplay style="display: none;">
+            <video id="song" style="display: none;" autoplay>
                 Your browser does not support HTML video.
             </video>
         </div>
@@ -44,8 +45,8 @@
                 <div>
                     <!-- Left side -->
                     <div>
-                        <button title="Show video"><img src="placeholder.png"></button>
-                        <p title=".mp4">.mp4</p>
+                        <button id="switchVisual" onclick="switchVisual();"><img src="placeholder.png"></button>
+                        <p id="fileType"></p>
                     </div>
 
                     <!-- Middle content -->
@@ -78,10 +79,10 @@
                     <!-- Bottom content -->
                     <div>
                         <!-- Length of time -->
-                        <p>0:00/23:59:59</p>
+                        <p id="songLength">0:00/23:59:59</p>
 
                         <!-- Name of song -->
-                        <div><p>Insert very cool song that has a long name :3</p></div>
+                        <div><p id="songName"></p></div>
                     </div>
                 </div>
             </div>
@@ -89,6 +90,7 @@
             <!-- Volume button -->
             <button title="Volume"><img src="placeholder.png"></button>
         </div>
-        <script src="controlbar.js"></script>
+        <script src="queue.js"></script>
+        <script src="songvisuals.js"></script>
     </body>
 </html>
