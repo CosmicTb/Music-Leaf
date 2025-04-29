@@ -6,12 +6,12 @@
     <img src="logos/winter.png" height="75" width="75">
 </div>
 
-# Music-Leaf `v0.0.5-prerelease`
+# Music-Leaf `v0.0.6-prerelease`
 A music player on the web that can play your music files (Not out yet)
 
 ## Plans for Music Leaf:
 _Plans may change duing development._
-- [ ] Switch from audio to video (Which means that video formats could also work and play)
+- [X] Switch from audio to video (Which means that video formats could also work and play)
 - [ ] No loop, Loop playlist, and Loop song
 - [ ] Shuffle songs
 - [ ] Adjustable volume
@@ -19,7 +19,7 @@ _Plans may change duing development._
 - [ ] Hidable song titles/covers
 - [ ] Mobile compatible
 - [ ] Import zip files that include lists of songs
-- [ ] Import multiple files at the same time
+- [X] Import multiple files at the same time
 - [ ] Themes
 - [ ] Rename song titles
 - [ ] Help button that also explains stuff that the user may not have known
